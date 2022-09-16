@@ -1,6 +1,6 @@
 module AresMUSH    
     module Fate
-      class HcsetCmd
+      class HcSetCmd
         include CommandHandler
         
         attr_accessor :target_name, :hc_name
