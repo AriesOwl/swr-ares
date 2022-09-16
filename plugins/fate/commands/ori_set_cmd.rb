@@ -3,7 +3,7 @@ module AresMUSH
       class OriSetCmd
         include CommandHandler
         
-        attr_accessor :target_name, :or_name
+        attr_accessor :target_name, :ori_name
         
         def parse_args
           # Admin version

@@ -3,22 +3,22 @@ module AresMUSH
       class OriRemoveCmd
         include CommandHandler
         
-        attr_accessor :target_name, :or_name
+        attr_accessor :target_name, :ori_name
         
         def parse_args
           # Admin version
           if (cmd.args =~ /\=/)
             args = cmd.parse_args(ArgParser.arg1_equals_arg2)
             self.target_name = titlecase_arg(args.arg1)
-            self.or_name = titlecase_arg(args.arg2)
+            self.ori_name = titlecase_arg(args.arg2)
           else
             self.target_name = enactor_name
-            self.or_name = titlecase_arg(cmd.args)
+            self.ori_name = titlecase_arg(cmd.args)
           end
         end
         
         def required_args
-          [self.target_name, self.or_name]
+          [self.target_name, self.ori_name]
         end
         
         def check_can_set
@@ -35,17 +35,17 @@ module AresMUSH
         def handle
           ClassTargetFinder.with_a_character(self.target_name, client, enactor) do |model|
             
-            or = model.fate_or || []
+            ori = model.fate_ori || []
             
-            if (!or.include?(self.or_name))
-              client.emit_failure t('fate.dont_have_or')
+            if (!ori.include?(self.ori_name))
+              client.emit_failure t('fate.dont_have_ori')
               return
             end
             
-            or.delete self.or_name
-            model.update(fate_or: or)
+            ori.delete self.ori_name
+            model.update(fate_ori: ori)
             
-            client.emit_success t('fate.or_removed')
+            client.emit_success t('fate.ori_removed')
           end
         end
       end
