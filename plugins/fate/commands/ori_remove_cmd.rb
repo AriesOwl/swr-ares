@@ -1,6 +1,6 @@
 module AresMUSH    
     module Fate
-      class OrRemoveCmd
+      class OriRemoveCmd
         include CommandHandler
         
         attr_accessor :target_name, :or_name
