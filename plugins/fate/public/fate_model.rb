@@ -1,6 +1,6 @@
 module AresMUSH
   class Character < Ohm::Model
-    attribute :fate_hc, :type => DataType::Hash, :default => []
+    attribute :fate_hc, :type => DataType::Array, :default => []
     attribute :fate_aspects, :type => DataType::Array, :default => []
     attribute :fate_stunts, :type => DataType::Hash, :default => {}
     attribute :fate_skills, :type => DataType::Hash, :default => {}
