@@ -1,5 +1,20 @@
 %lh
 %xh<%= char.name %>%xn <%= center( approval_status, 23 ) %>
+<%= line_with_text t('fate.hc_title') %>
+<% hc.each do |a| %>
+<%= a %>
+<% end %> 
+
+<%= line_with_text t('fate.tr_title') %>
+<% tr.each do |a| %>
+<%= a %>
+<% end %> 
+
+<%= line_with_text t('fate.ori_title') %>
+<% ori.each do |a| %>
+<%= a %>
+<% end %> 
+
 <%= line_with_text t('fate.aspects_title') %>
 <% aspects.each do |a| %>
 <%= a %>
