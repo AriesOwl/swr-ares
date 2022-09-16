@@ -87,9 +87,19 @@ module AresMUSH
     
     def self.update_refresh(model)
       num_stunts = (model.fate_stunts || {}).count
-      if (num_stunts <= 3)
+      if (num_stunts <= 4)
+        model.update(fate_refresh: 8)
+      elsif (num_stunts == 5)
+        model.update(fate_refresh: 7)
+      elsif (num_stunts == 6)
+        model.update(fate_refresh: 6)
+      elsif (num_stunts == 7)
+        model.update(fate_refresh: 5)
+      elsif (num_stunts == 8)
+        model.update(fate_refresh: 4)
+      elsif (num_stunts == 9)
         model.update(fate_refresh: 3)
-      elsif (num_stunts == 4)
+      elsif (num_stunts == 10)
         model.update(fate_refresh: 2)
       else
         model.update(fate_refresh: 1)
