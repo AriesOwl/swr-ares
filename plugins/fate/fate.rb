@@ -22,6 +22,13 @@ module AresMUSH
         when nil
           return StuntsCmd
         end
+      when "hc"
+        case cmd.switch
+        when "set"
+          return HcSetCmd
+        when "remove"
+          return HcRemoveCmd
+        end
       when "aspect"
         case cmd.switch
         when "set"
