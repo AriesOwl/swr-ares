@@ -11,10 +11,10 @@ en:
       tr_removed: "Trouble removed."
       dont_have_tr: "You don't have a Trouble."
 
-      already_have_or: "That is already your Origin aspect."
-      or_added: "Origin aspect added."
-      or_removed: "Origin aspect removed."
-      dont_have_or: "You don't have a Origin aspect."
+      already_have_ori: "That is already your Origin aspect."
+      ori_added: "Origin aspect added."
+      ori_removed: "Origin aspect removed."
+      dont_have_ori: "You don't have a Origin aspect."
       
       already_have_aspect: "You already have that aspect."
       aspect_added: "Aspect added."
