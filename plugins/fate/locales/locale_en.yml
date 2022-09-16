@@ -1,15 +1,25 @@
 ---
 en:
   fate:
+      already_have_hc: "That is already your High Concept."
+      hc_added: "High Concept added."
+      hc_removed: "High Concept removed."
+      dont_have_hc: "You don't have a High Concept."
+
+      already_have_tr: "That is already your Trouble."
+      tr_added: "Trouble added."
+      tr_removed: "Trouble removed."
+      dont_have_tr: "You don't have a Trouble."
+
+      already_have_or: "That is already your Origin aspect."
+      or_added: "Origin aspect added."
+      or_removed: "Origin aspect removed."
+      dont_have_or: "You don't have a Origin aspect."
+      
       already_have_aspect: "You already have that aspect."
       aspect_added: "Aspect added."
       aspect_removed: "Aspect removed."
       dont_have_aspect: "You don't have that aspect."
-
-      already_have_hc: "That is already High Concept."
-      hc_added: "High Concept added."
-      hc_removed: "High Concept removed."
-      dont_have_hc: "You don't have a High Concept."
 
       fate_point_spent: "%{name} has spent a fate point on %{reason}."
       not_enough_points: "You don't have any more points."
