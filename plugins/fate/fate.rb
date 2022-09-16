@@ -36,12 +36,12 @@ module AresMUSH
         when "remove"
           return TrRemoveCmd
         end
-      when "or"
+      when "ori"
         case cmd.switch
         when "set"
-          return OrSetCmd
+          return OriSetCmd
         when "remove"
-          return OrRemoveCmd
+          return OriRemoveCmd
         end
       when "aspect"
         case cmd.switch
