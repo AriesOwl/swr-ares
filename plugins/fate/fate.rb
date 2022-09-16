@@ -29,6 +29,20 @@ module AresMUSH
         when "remove"
           return HcRemoveCmd
         end
+      when "tr"
+        case cmd.switch
+        when "set"
+          return TrSetCmd
+        when "remove"
+          return TrRemoveCmd
+        end
+      when "or"
+        case cmd.switch
+        when "set"
+          return OrSetCmd
+        when "remove"
+          return OrRemoveCmd
+        end
       when "aspect"
         case cmd.switch
         when "set"
