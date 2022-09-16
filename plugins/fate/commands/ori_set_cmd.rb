@@ -42,7 +42,7 @@ module AresMUSH
               return
             end
             
-            or << self.ori_name
+            ori << self.ori_name
             model.update(fate_ori: ori)
             
             client.emit_success t('fate.ori_added')
