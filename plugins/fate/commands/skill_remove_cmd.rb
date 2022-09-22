@@ -37,7 +37,7 @@ module AresMUSH
           
                     skills = model.fate_skills
           
-                if (!skill.has_key?(self.skill_name))
+                if (!skills.has_key?(self.skill_name))
                      client.emit_failure t('fate.dont_have_skill')
                      return
                 end
