@@ -25,7 +25,7 @@ module AresMUSH
       end
       
       def check_valid_rating
-        return nil if self.rating < '1'
+        return nil if self.rating == '0'
         return t('fate.invalid_rating') if !Fate.is_valid_skill_rating?(self.rating)
         return nil
       end
