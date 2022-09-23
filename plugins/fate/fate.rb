@@ -71,8 +71,6 @@ module AresMUSH
         case cmd.switch
         when "set"
           return SkillSetCmd
-        when "remove"
-          return SkillRemoveCmd
         when nil
           return SkillsCmd
         end
