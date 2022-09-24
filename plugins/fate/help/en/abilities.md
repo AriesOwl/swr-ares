@@ -23,6 +23,7 @@ Fate has three kinds of abilities:  Aspects, Skills and Stunts
     Any skill not expressly listed is assumed to be Mediocre (+0).
     Set a skill to 0 to remove it.
 
-`stunts` - Lists some sample stunts, but you are allowed to propose your own.
+`stunts` - Lists of pre-approved stunts. Players may also propose new stunts.
+    Pages after the first can be read with the command "stunts2" "stunts3" and so on.
 `stunt/add <name>[=<description>]` - Sets a stunt.  Description can be omitted for stunts from the sample list.
 `stunt/remove <name>` - Removes a stunt.
