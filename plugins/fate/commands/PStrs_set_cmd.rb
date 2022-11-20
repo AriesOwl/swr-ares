@@ -10,10 +10,10 @@ module AresMUSH
                 if (cmd.args =~ /\=/)
                     args = cmd.parse_args(ArgParser.arg1_equals_arg2)
                     self.target_name = titlecase_arg(args.arg1)
-                    self.pstrs_rating = titlecase_arg(args.arg2)
+                    self.pstrs = titlecase_arg(args.arg2)
                 else
                     self.target_name = enactor_name
-                    self.pstrs_rating = titlecase_arg(cmd.args)
+                    self.pstrs = titlecase_arg(cmd.args)
                 end
             end
             
