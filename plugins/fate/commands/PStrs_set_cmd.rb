@@ -13,7 +13,7 @@ module AresMUSH
                     self.pstrs_rating = titlecase_arg(args.arg2)
                 else
                     self.target_name = enactor_name
-                    self.ptsrs_rating = titlecase_arg(cmd.args)
+                    self.pstrs_rating = titlecase_arg(cmd.args)
                 end
             end
             
