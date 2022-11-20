@@ -48,6 +48,10 @@ module AresMUSH
       def stunts
         (@char.fate_stunts || {}).sort
       end
+
+      def stress
+        (@char.physical_stress_thresh || []).sort
+        (@char.mental_stress_thresh || []).sort
     end
   end
 end
