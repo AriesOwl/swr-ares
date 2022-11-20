@@ -50,6 +50,7 @@ module AresMUSH
                
                 client.emit_success t('fate.pstrs_Set')
             end
+          end
         end
     end       
 end    
