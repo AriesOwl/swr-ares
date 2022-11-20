@@ -22,7 +22,7 @@
 
 <%= line_with_text t('fate.skills_title') -%>
 <% skills.each do |a| -%>
-<%= a -%>
+<%= a %>
 <% end %> 
 
 
@@ -30,6 +30,11 @@
 <% stunts.each do |name, desc| %>
 <%= name %> - <%= desc %>
 <% end %> 
+
+<%= line_with_text t('fate.stress_title') %>
+<% physical_stress_skill.each do |a| %>
+<%= a %>
+<% end %>
 
 %xh<%= t('fate.refresh_title') %>%xn <%= left( char.fate_refresh, 30 ) %> %xh<%= t('fate.fate_points_title') %>%xn <%= char.fate_points %>
 %lf
