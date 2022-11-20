@@ -41,6 +41,7 @@ en:
       fate_points_title: "Fate Points:"
       refresh_title: "Refresh:"
       stress_title: "Stress"
+      consequences_title: "Consequences"
 
       skill_removed: "Skill removed."
       skill_set: "Skill set."
