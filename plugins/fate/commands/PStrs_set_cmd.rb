@@ -3,7 +3,7 @@ module AresMUSH
         class PStrsSetCmd
             include CommandHandler
             
-            attr_accessor :target_name, :pstrs_rating
+            attr_accessor :target_name, :pstrs
 
             def parse_args
                 # Admin version
@@ -18,7 +18,7 @@ module AresMUSH
             end
             
             def required_args
-                [self.target_name, self.pstrs_rating]
+                [self.target_name, self.pstrs]
             end
 
             def check_can_set
@@ -35,14 +35,12 @@ module AresMUSH
             def handle
                 ClassTargetFinder.with_a_character(self.target_name, client, enactor) do |model|
                 
-                    pstrs_rating = model.fate_pstrs || []
+                    pstrs = model.fate_pstrs || []
 
-                    def self.physical_stress_thresh
-                        skill = Global.read_config('fate' 'physical stress skill')
-                        skill_rating = Fate.skill_rating(model, skill)
-                        if (skill_rating == 1 || skill_rating == 2)
+                   def self.physical_stress_thresh
+                        if (Vigor == 1 || Vigor == 2)
                             return OOO
-                        elsif (skill_rating >= 3)
+                        elsif (Vigor >= 3)
                             return OOOO
                         else
                             return OO
