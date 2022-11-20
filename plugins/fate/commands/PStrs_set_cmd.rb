@@ -34,20 +34,21 @@ module AresMUSH
 
             def handle
                 ClassTargetFinder.with_a_character(self.target_name, client, enactor) do |model|
-                
+                 
                     pstrs = model.fate_pstrs || []
 
-                   def self.physical_stress_thresh
-                        if (Vigor == 1 || Vigor == 2)
-                            return OOO
-                        elsif (Vigor >= 3)
-                            return OOOO
-                        else
-                            return OO
-                        end
-                        
-                        clinet.emit_success t('fate.pstrs_Set')
+                    if (Vigor == 1 || Vigor == 2)
+                        return OOO
+                    elsif (Vigor >= 3)
+                        return OOOO
+                    else
+                        return OO
                     end
+                    
+                    model.update(fate_pstrs: pstrs)
+                    
+                    clinet.emit_success t('fate.pstrs_Set')
+                
                 end
             end
         end
