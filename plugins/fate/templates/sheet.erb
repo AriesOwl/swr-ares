@@ -8,7 +8,7 @@
 <%= line_with_text t('fate.tr_title') %>    
 <% tr.each do |a| %>
 <%= a %>
-<% end %> 
+<% end %>
 
 <%= line_with_text t('fate.ori_title') %>    
 <% ori.each do |a| %>
@@ -25,7 +25,6 @@
 <%= a -%>
 <% end %> 
 
-
 <%= line_with_text t('fate.stunts_title') %>
 <% stunts.each do |name, desc| %>
 <%= name %> - <%= desc %>
@@ -33,7 +32,8 @@
 
 <%= line_with_text t('fate.stress_title') %>
 <% pstress.each do |a| %>
-<% end %>
+<%= a %>
+<% end %> 
 
 <%= line_with_text t('fate.consequences_title') %>
 
