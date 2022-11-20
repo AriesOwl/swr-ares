@@ -50,8 +50,7 @@ module AresMUSH
       end
 
       def stress
-        (@char.physical_stress_thresh || []).sort
-        (@char.mental_stress_thresh || []).sort
+        (@char.fate_stress || []).sort
       end
     end
   end
