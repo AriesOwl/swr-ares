@@ -49,9 +49,12 @@ module AresMUSH
         (@char.fate_stunts || {}).sort
       end
 
-      def stress
-        (@char.physical_stress_thresh(model) || []).sort
-        (@char.mental_stress_thresh(model) || []).sort
+      def physical_stress
+        (@char.physical_stress_thresh || []).sort
+      end
+      
+      def mental_stress
+        (@char.mental_stress_thresh || []).sort
       end
     end
   end
