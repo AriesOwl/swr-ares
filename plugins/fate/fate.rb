@@ -74,9 +74,13 @@ module AresMUSH
         when nil
           return SkillsCmd
         end
+      when "pstrs"
+        case cmd.switch
+        when "set"
+          return PStrsSetCmd
+        end          
       end
-        
-    end
+   end
 
     def self.get_event_handler(event_name)
       case event_name
