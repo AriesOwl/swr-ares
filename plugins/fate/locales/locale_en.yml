@@ -43,6 +43,8 @@ en:
       stress_title: "Stress"
       consequences_title: "Consequences"
 
+      pstress_set: "Physical Stress Set."
+
       skill_removed: "Skill removed."
       skill_set: "Skill set."
       invalid_rating: "That is not a valid skill rating."
