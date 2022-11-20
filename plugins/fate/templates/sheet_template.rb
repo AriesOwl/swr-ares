@@ -49,7 +49,7 @@ module AresMUSH
         (@char.fate_stunts || {}).sort
       end
 
-      def stress
+      def pstress
         (@char.fate_pstress || []).sort
       end
     end
