@@ -74,10 +74,10 @@ module AresMUSH
         when nil
           return SkillsCmd
         end
-      when "pstrs"
+      when "pstress"
         case cmd.switch
         when "set"
-          return PStrsSetCmd
+          return PStressSetCmd
         end          
       end
    end
