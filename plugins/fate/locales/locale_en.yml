@@ -40,7 +40,8 @@ en:
       aspects_title: "Aspects"
       fate_points_title: "Fate Points:"
       refresh_title: "Refresh:"
-      
+      stress_title: "Stress"
+
       skill_removed: "Skill removed."
       skill_set: "Skill set."
       invalid_rating: "That is not a valid skill rating."
