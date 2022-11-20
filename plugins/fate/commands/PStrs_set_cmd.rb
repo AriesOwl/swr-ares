@@ -3,7 +3,7 @@ module AresMUSH
         class PStrsSetCmd
             include CommandHandler
             
-            attr_accessor :target_name, :ptsrs_rating
+            attr_accessor :target_name, :pstrs_rating
 
             def parse_args
                 # Admin version
