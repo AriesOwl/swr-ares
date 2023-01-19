@@ -34,9 +34,9 @@ en:
 
       stunts_title: "Stunts"
       skills_title: "Skills"
-      hc_title: "High Concept"
-      tr_title: "Trouble"
-      ori_title: "Origin"
+      hc_title: "High Concept Aspect"
+      tr_title: "Trouble Aspect"
+      ori_title: "Origin Aspect"
       aspects_title: "Aspects"
       fate_points_title: "Fate Points:"
       refresh_title: "Refresh:"
