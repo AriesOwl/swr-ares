@@ -88,19 +88,21 @@ module AresMUSH
     def self.update_refresh(model)
       num_stunts = (model.fate_stunts || {}).count
       if (num_stunts <= 4)
-        model.update(fate_refresh: 8)
+        model.update(fate_refresh: 9)
       elsif (num_stunts == 5)
-        model.update(fate_refresh: 7)
+        model.update(fate_refresh: 8)
       elsif (num_stunts == 6)
-        model.update(fate_refresh: 6)
+        model.update(fate_refresh: 7)
       elsif (num_stunts == 7)
-        model.update(fate_refresh: 5)
+        model.update(fate_refresh: 6)
       elsif (num_stunts == 8)
-        model.update(fate_refresh: 4)
+        model.update(fate_refresh: 5)
       elsif (num_stunts == 9)
-        model.update(fate_refresh: 3)
+        model.update(fate_refresh: 4)
       elsif (num_stunts == 10)
-        model.update(fate_refresh: 2)
+        model.update(fate_refresh: 3)
+      elsif (num_stunts == 11)
+        model.update(fate_refresh: 2)   
       else
         model.update(fate_refresh: 1)
       end
@@ -126,11 +128,11 @@ module AresMUSH
       skill = Global.read_config('fate', 'physical_stress_skill')
       skill_rating = Fate.skill_rating(model, skill)
       if (skill_rating == 1 || skill_rating == 2)
-        return 3
+        return OOO
       elsif (skill_rating >= 3)
-        return 4
+        return OOOO
       else
-        return 2
+        return OO
       end
     end
     
