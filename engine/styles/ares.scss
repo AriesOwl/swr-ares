@@ -415,6 +415,25 @@ button.outdent.toastui-editor-toolbar-icons {
   color: $box-words-color;
 }
 
+.toastui-editor-popup-body input[type='text'] {
+    color: $primary-words-color;
+}
+
+.toastui-editor-defaultUI .toastui-editor-close-button,
+.toastui-editor-defaultUI .toastui-editor-ok-button {
+    font-size: 1.25em;
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+    color: $secondary-words-color;
+}
+
+.toastui-editor-defaultUI .toastui-editor-close-button:hover,
+.toastui-editor-defaultUI .toastui-editor-ok-button:hover {
+    color: $text-color;
+    background-color: $primary-color;
+    border-color: $primary-color;
+}
+
 
 /* -------------------------
 NAVIGATION
